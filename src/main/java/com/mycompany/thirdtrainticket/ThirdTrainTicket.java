@@ -22,7 +22,13 @@ public class ThirdTrainTicket {
         this.destination = destination;
         this.ticketClass = ticketClass;
         this.price = price;
-}
+    }    
+     
+    public static void main(String[] args) {
+
+    DatabaseConnection.connect();
+
+    }
  // Getter method to return passenger name
     public String getPassengerName() {
         return passengerName;
@@ -52,8 +58,4 @@ public class ThirdTrainTicket {
                "\n-----------------------------\n";
     }
 
-    public static void main(String[] args) {
-        // Start the GUI application
-        new TrainTicketGUI();
-    } 
 }
